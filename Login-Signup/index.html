@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="background"></div>
+  <section class="wrapper">
+    <div class="form signup">
+      <header>Signup</header><br>
+      <form id="signup-form">
+        <input type="text" placeholder="Full name" required>
+        <input type="text" placeholder="Email address" required>
+        <input type="password" placeholder="Password" required>
+        <div class="radio">
+          <input type="radio" id="admin" name="account_type" value="admin" checked>
+          <label for="admin">Admin</label>
+          <input type="radio" id="client" name="account_type" value="client">
+          <label for="client">Client</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" id="signupCheck" name="terms" required>
+          <label for="signupCheck">I accept all terms & conditions</label>
+        </div>
+        <input type="submit" value="Signup" id="signup-btn">
+      </form>
+    </div>
+    <div class="form login">
+      <header>Login</header>
+      <form>
+        <input type="text" placeholder="Email address" required>
+        <input type="password" placeholder="Password" required>
+        <div class="remember-me-checkbox">
+          <input type="checkbox" id="remember-me" name="remember-me">
+          <label for="remember-me">Remember me</label>
+        </div>
+        <input type="submit" value="Login" id="login-btn">
+        <a href="#">Forgot password?</a>
+      </form>
+    </div>
+    <script src="main.js"></script>
+    </section>
+    <footer>
+      <p> Copyright &copy; <a href="https://imatin.dev" target="_blank">imatin.dev</a> </p>
+    </footer>
+</body>
+</html>
